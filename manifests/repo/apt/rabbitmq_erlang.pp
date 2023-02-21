@@ -1,4 +1,4 @@
-# erlang erlang_solutions apt repo
+# erlang rabbitmq_erlang apt repo
 class erlang::repo::apt::rabbitmq_erlang (
   String $ensure = $erlang::repo::apt::ensure,
   String $location    = 'https://ppa.launchpadcontent.net/rabbitmq/rabbitmq-erlang/ubuntu/',
