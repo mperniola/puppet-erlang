@@ -4,10 +4,11 @@
 # For Debian/Ubuntu the choices for `repo_source` are:
 #  - `'bintray'` (default)
 #  - `'erlang_solutions'`
+#  - `'rabbitmq_erlang'`
 #
 # For CentOS/RHEL the choices for `repo_source` are:
 #  - `'bintray'`
 #  - `'epel'`
 #  - `'erlang_solutions'`
 #  - `'packagecloud'` (default)
-type Erlang::RepoSource = Enum['epel', 'erlang_solutions', 'packagecloud']
+type Erlang::RepoSource = Enum['rabbitmq_erlang', 'erlang_solutions', 'bintray']
