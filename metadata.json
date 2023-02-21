@@ -1,56 +1,82 @@
 {
-  "name": "puppet-erlang",
-  "version": "1.0.1-rc0",
-  "author": "Vox Pupuli",
-  "summary": "Manages repos and package Erlang installation",
+  "name": "puppet-rabbitmq",
+  "version": "10.3.0",
+  "author": "voxpupuli",
+  "summary": "Installs, configures, and manages RabbitMQ.",
   "license": "Apache-2.0",
-  "source": "https://github.com/voxpupuli/puppet-erlang",
-  "project_page": "https://github.com/voxpupuli/puppet-erlang",
-  "issues_url": "https://github.com/voxpupuli/puppet-erlang/issues",
-  "dependencies": [
-    {
-      "name": "puppetlabs/apt",
-      "version_requirement": ">= 2.0.0 < 9.0.0"
-    },
-    {
-      "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.13.0 < 9.0.0"
-    },
-    {
-      "name": "puppetlabs/yumrepo_core",
-      "version_requirement": ">= 1.0.0 < 2.0.0"
-    }
-  ],
+  "source": "https://github.com/voxpupuli/puppet-rabbitmq",
+  "project_page": "https://github.com/voxpupuli/puppet-rabbitmq",
+  "issues_url": "https://github.com/voxpupuli/puppet-rabbitmq/issues",
   "operatingsystem_support": [
     {
-      "operatingsystem": "CentOS",
+      "operatingsystem": "RedHat",
       "operatingsystemrelease": [
-        "7",
-        "8"
+        "6",
+        "7"
       ]
     },
     {
-      "operatingsystem": "Ubuntu",
+      "operatingsystem": "CentOS",
       "operatingsystemrelease": [
-        "18.04",
-        "20.04"
+        "6",
+        "7"
       ]
     },
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
+        "8",
         "9"
       ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "20.04",
+        "22.04"
+      ]
+    },
+    {
+      "operatingsystem": "SLES",
+      "operatingsystemrelease": [
+        "11"
+      ]
+    },
+    {
+      "operatingsystem": "FreeBSD"
+    },
+    {
+      "operatingsystem": "OpenBSD"
+    },
+    {
+      "operatingsystem": "Archlinux"
     }
   ],
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 6.1.0 < 8.0.0"
+      "version_requirement": ">= 5.5.8 < 9.0.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.13.1 < 9.0.0"
+    },
+    {
+      "name": "puppet/archive",
+      "version_requirement": ">= 2.0.0 < 5.0.0"
+    },
+    {
+      "name": "camptocamp/systemd",
+      "version_requirement": ">= 2.10.0 < 3.0.0"
     }
   ],
   "tags": [
-    "erlang",
-    "rabbitmq"
+    "rabbitmq",
+    "ampq",
+    "messaging",
+    "stomp",
+    "queue"
   ]
 }
