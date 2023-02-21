@@ -7,6 +7,10 @@ class erlang::repo::apt (
     'erlang_solutions': {
       contain erlang::repo::apt::erlang_solutions
     }
+  case $source {
+    'rabbitmq_erlang': {
+      contain erlang::repo::apt::rabbitmq_erlang
+    }    
     default: {
       fail("Only 'erlang_solutions' repo_sources is supported for Apt repos, the following is not supported: ${source}")
     }
